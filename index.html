@@ -10,7 +10,6 @@ html, body {
   overflow:hidden;
 }
 
-/* Fullscreen iframe for your project */
 iframe {
   position:fixed;
   top:0;
@@ -21,21 +20,21 @@ iframe {
   z-index:1;
 }
 
-/* Cover the top UI (green flag, stop button) */
+/* White bar to cover the top UI */
 .top-cover {
   position: fixed;
   top:0;
   left:0;
   width:100%;
-  height:80px; /* adjust as needed */
+  height:80px; /* adjust if needed */
   background:white;
   z-index:2;
 }
 
-/* Cover the left and right edges of the outline */
+/* White bars to cover left and right stage outline */
 .left-cover, .right-cover {
   position: fixed;
-  top:80px; /* below the top cover */
+  top:80px; /* start below top cover */
   bottom:0;
   width:40px; /* adjust to cover outline width */
   background:white;
@@ -48,16 +47,9 @@ iframe {
 </head>
 <body>
 
-<!-- White rectangles to hide UI and stage outline -->
 <div class="top-cover"></div>
 <div class="left-cover"></div>
 <div class="right-cover"></div>
-
-<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen&ui=false" allowfullscreen></iframe>
-
-</body>
-</html>
-
 
 <iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen" allowfullscreen></iframe>
 
