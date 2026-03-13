@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 html, body {
   margin:0;
   padding:0;
+  width:100%;
   height:100%;
-  background:white;
   overflow:hidden;
+  background:white;
 }
 
 iframe {
@@ -18,54 +19,13 @@ iframe {
   width:100%;
   height:100%;
   border:none;
-  z-index:1;
-}
-
-/* Top and sides to hide Scratch stage outline */
-.top-cover {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:10px; /* cover top outline */
-  background:white;
-  z-index:2;
-}
-
-.left-cover {
-  position: fixed;
-  top:10px; /* start below top cover */
-  bottom:0;
-  left:0;
-  width:10px; /* cover left outline */
-  background:white;
-  z-index:2;
-}
-
-.right-cover {
-  position: fixed;
-  top:10px;
-  bottom:0;
-  right:0;
-  width:10px; /* cover right outline */
-  background:white;
-  z-index:2;
 }
 </style>
 </head>
 <body>
 
-<div class="top-cover"></div>
-<div class="left-cover"></div>
-<div class="right-cover"></div>
-
-<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen&ui=false" allowfullscreen></iframe>
+<iframe src="https://turbowarp.org/1288101812/embed?autoplay=true&ui=false&fullscreen=true" allowfullscreen></iframe>
 
 </body>
 </html>
 
-
-<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen&ui=false" allowfullscreen></iframe>
-
-</body>
-</html>
