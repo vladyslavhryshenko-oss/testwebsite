@@ -12,7 +12,7 @@ html, body {
   background:white;
 }
 
-/* fullscreen iframe for TurboWarp project */
+/* Fullscreen TurboWarp iframe */
 iframe {
   position:fixed;
   top:0;
@@ -23,39 +23,55 @@ iframe {
   z-index:1;
 }
 
-/* White overlays to hide all TurboWarp UI and stage outline */
+/* Covers the top UI (green flag / stop button) */
 .top-cover {
   position: fixed;
   top:0;
   left:0;
   width:100%;
-  height:80px; /* covers green flag / stop button / top outline */
+  height:80px; /* adjust if needed */
   background:white;
   z-index:2;
 }
 
-.left-cover, .right-cover {
+/* Covers left, right, and bottom stage outlines */
+.left-cover, .right-cover, .bottom-cover {
   position: fixed;
-  top:80px; /* start below top cover */
-  bottom:0;
-  width:40px; /* cover left/right stage outline */
   background:white;
   z-index:2;
 }
 
-.left-cover { left:0; }
-.right-cover { right:0; }
+.left-cover {
+  top:80px; /* start below top cover */
+  bottom:20px; /* leave a little at bottom if needed */
+  left:0;
+  width:40px; /* adjust to cover left outline */
+}
+
+.right-cover {
+  top:80px;
+  bottom:20px;
+  right:0;
+  width:40px; /* adjust to cover right outline */
+}
+
+.bottom-cover {
+  left:0;
+  right:0;
+  bottom:0;
+  height:20px; /* adjust to cover bottom outline */
+}
 </style>
 </head>
 <body>
 
-<!-- white rectangles to hide UI -->
+<!-- White boxes hiding all UI and outlines -->
 <div class="top-cover"></div>
 <div class="left-cover"></div>
 <div class="right-cover"></div>
+<div class="bottom-cover"></div>
 
 <iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen" allowfullscreen></iframe>
 
 </body>
 </html>
-
