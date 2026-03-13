@@ -20,13 +20,13 @@ iframe {
   z-index:1;
 }
 
-/* White rectangle to cover the top UI */
+/* White bar to hide top UI, leaving bottom free for ask boxes */
 .top-cover {
   position: fixed;
   top:0;
   left:0;
   width:100%;
-  height:80px; /* adjust this if needed */
+  height:80px; /* adjust if needed for the green flag and outline */
   background:white;
   z-index:2;
 }
@@ -34,13 +34,14 @@ iframe {
 </head>
 <body>
 
-<!-- This white bar hides the flag/outline -->
+<!-- White bar covering only the top part -->
 <div class="top-cover"></div>
 
-<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen" allowfullscreen></iframe>
+<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen&ui=false" allowfullscreen></iframe>
 
 </body>
 </html>
+
 
 <iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen" allowfullscreen></iframe>
 
