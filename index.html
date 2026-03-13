@@ -5,9 +5,11 @@
 <style>
 html, body {
   margin:0;
+  padding:0;
   height:100%;
   background:white;
   overflow:hidden;
+  border:none; /* remove any default border */
 }
 
 iframe {
@@ -16,42 +18,14 @@ iframe {
   left:0;
   width:100%;
   height:100%;
-  border:none;
-  z-index:1;
+  border:none; /* removes grey iframe border */
+  outline:none; /* removes browser focus outline */
 }
-
-/* White bar to cover the top UI */
-.top-cover {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:80px; /* adjust if needed */
-  background:white;
-  z-index:2;
-}
-
-/* White bars to cover left and right stage outline */
-.left-cover, .right-cover {
-  position: fixed;
-  top:80px; /* start below top cover */
-  bottom:0;
-  width:40px; /* adjust to cover outline width */
-  background:white;
-  z-index:2;
-}
-
-.left-cover { left:0; }
-.right-cover { right:0; }
 </style>
 </head>
 <body>
 
-<div class="top-cover"></div>
-<div class="left-cover"></div>
-<div class="right-cover"></div>
-
-<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen" allowfullscreen></iframe>
+<iframe src="https://turbowarp.org/1288101812/embed?autoplay&fullscreen&ui=false" allowfullscreen></iframe>
 
 </body>
 </html>
